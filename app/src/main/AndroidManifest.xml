@@ -64,6 +64,42 @@
 
             <category android:name="android.intent.category.DEFAULT" />
         </activity>
+        <activity android:name=".HospitalUserActivity">
+            <action android:name="com.example.prabhat.tester_app.HospitalUserActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".HospitalUserViewDetails">
+            <action android:name="com.example.prabhat.tester_app.HospitalUserViewDetails" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".HospitalUserUpdateForm">
+            <action android:name="com.example.prabhat.tester_app.HospitalUserUpdateForm" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".ListedCasesActivity">
+            <action android:name="com.example.prabhat.tester_app.ListedCasesActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".AmbulanceUser" />
+        <activity
+            android:name=".GetRouteToPatientMap"
+            android:label="@string/title_activity_get_route_to_patient_map">
+            <action android:name="com.example.prabhat.tester_app.GetRouteToPatientMap" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".CaseEvaluationActivity">
+            <action android:name="com.example.prabhat.tester_app.CaseEvaluationActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".PoliceActivity" />
+        <activity android:name=".PoliceCaseList" />
+        <activity android:name=".PoliceViewHospitalList"></activity>
     </application>
 
 </manifest>

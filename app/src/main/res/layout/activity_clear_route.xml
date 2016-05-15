@@ -16,4 +16,14 @@
         android:id="@+id/clear"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome User (T)"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/clear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
 </RelativeLayout>

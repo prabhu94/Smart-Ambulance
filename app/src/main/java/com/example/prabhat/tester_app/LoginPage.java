@@ -51,7 +51,7 @@ public class LoginPage extends AppCompatActivity implements LoaderCallbacks<Curs
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "adarsh@hitachi.com:adarsh", "prabhat@hitachi.com:prabhat","arpit@hitachi.com:arpit","surya@hitachi.com:surya"
+            "adarsh@usertrigger.com:adarsh", "prabhat@userpassive.com:prabhat", "arpit@userhospital.com:arpit","surya@userambulance.com:surya","police@police.com:police"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -340,35 +340,41 @@ public class LoginPage extends AppCompatActivity implements LoaderCallbacks<Curs
 
             String authEmail=mEmail;
             System.out.println("Auth email: "+authEmail);
-            if (success && authEmail.equals("adarsh@hitachi.com")) {
+            if (success && authEmail.equals("adarsh@usertrigger.com")) {
                 System.out.println("Auth email: "+authEmail);
                 finish();
                 Intent i = new Intent(LoginPage.this,HelpButtonActivity.class);
                 LoginPage.this.startActivity(i);
             } else
-            if (success && authEmail.equals("prabhat@hitachi.com")) {
-                System.out.println("Auth email: "+authEmail);
-
-                finish();
-                Intent i = new Intent(LoginPage.this,ClearRouteActivity.class);
-                LoginPage.this.startActivity(i);
-            }
-            else
-            if (success && authEmail.equals("arpit@hitachi.com")) {
+            if (success && authEmail.equals("prabhat@userpassive.com")) {
                 System.out.println("Auth email: "+authEmail);
 
                 finish();
                 Intent i = new Intent(LoginPage.this,ClearRouteActivity.class);
                 LoginPage.this.startActivity(i);
             } else
-            if (success && authEmail.equals("surya@hitachi.com")) {
+            if (success && authEmail.equals("arpit@userhospital.com")) {
                 System.out.println("Auth email: "+authEmail);
 
                 finish();
-                Intent i = new Intent(LoginPage.this,ClearRouteActivity.class);
+                Intent i = new Intent(LoginPage.this,HospitalUserActivity.class);
                 LoginPage.this.startActivity(i);
             }
-            else{
+            else
+            if (success && authEmail.equals("surya@userambulance.com")) {
+                System.out.println("Auth email: "+authEmail);
+
+                finish();
+                Intent i = new Intent(LoginPage.this,AmbulanceUser.class);
+                LoginPage.this.startActivity(i);
+            }else
+            if (success && authEmail.equals("police@police.com")) {
+                System.out.println("Auth email: "+authEmail);
+
+                finish();
+                Intent i = new Intent(LoginPage.this,PoliceActivity.class);
+                LoginPage.this.startActivity(i);
+            }else{
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
             }

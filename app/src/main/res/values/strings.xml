@@ -15,4 +15,5 @@
     </string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_clear_route_map">Map</string>
+    <string name="title_activity_get_route_to_patient_map">Map</string>
 </resources>
