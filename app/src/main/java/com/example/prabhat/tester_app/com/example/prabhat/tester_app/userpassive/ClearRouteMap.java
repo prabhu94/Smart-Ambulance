@@ -1,14 +1,12 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userpassive;
 
 import android.Manifest;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.location.Location;
 
 import android.content.IntentSender;
-import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
@@ -19,10 +17,8 @@ import android.util.Log;
 import com.akexorcist.googledirection.constant.TransportMode;
 import com.directions.route.Routing;
 import com.directions.route.RoutingListener;*/
-import com.akexorcist.googledirection.DirectionCallback;
-import com.akexorcist.googledirection.GoogleDirection;
-import com.akexorcist.googledirection.model.Direction;
-import com.akexorcist.googledirection.util.DirectionConverter;
+import com.example.prabhat.tester_app.R;
+import com.example.prabhat.tester_app.com.example.prabhat.tester_app.useractive.MapsActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -31,22 +27,12 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
-
-public class MapsActivity extends FragmentActivity implements
+public class ClearRouteMap extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
@@ -156,7 +142,7 @@ public class MapsActivity extends FragmentActivity implements
         mMap.addMarker(options1);
         MarkerOptions options = new MarkerOptions()
                 .position(latLng)
-                .title("First Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.img1));
+                .title("First Marker").icon(BitmapDescriptorFactory.fromResource(R.drawable.img3));
         mMap.addMarker(options);
 
 
@@ -164,10 +150,10 @@ public class MapsActivity extends FragmentActivity implements
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoomLevel));
         mMap.setMapType(4);
         mMap.addPolyline(new PolylineOptions().add(latLng, latLng1).width(5).visible(true).geodesic(true));
-                        }
+    }
 
 
-        private static final int REQUEST_CODE_LOCATION = 2;
+    private static final int REQUEST_CODE_LOCATION = 2;
 
 
 
@@ -237,7 +223,7 @@ public class MapsActivity extends FragmentActivity implements
         Notification notif = builder.build();
         NotificationManager mgr = (NotificationManager)this.getSystemService(NOTIFICATION_SERVICE);
         mgr.notify(8,notif);
-       }
+    }
 }
 
 

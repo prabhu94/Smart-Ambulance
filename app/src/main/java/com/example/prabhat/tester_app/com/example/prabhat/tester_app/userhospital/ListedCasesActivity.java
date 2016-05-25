@@ -1,19 +1,21 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userhospital;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class PoliceCaseList extends AppCompatActivity {
+import com.example.prabhat.tester_app.R;
+
+public class ListedCasesActivity extends AppCompatActivity {
     ListView mylistview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_police_case_list);
-        String[] mylist= {"C/1001/123/A/P1","C/1002/123/A/P1"," C/1003/123/A/P1","C/1004/123/A/P1", "C/1005/123/A/P1"};
+        setContentView(R.layout.activity_listed_cases);
+        String[] mylist= {"C/1001/123/A","C/1002/123/A"," C/1003/123/A","C/1004/123/A", "C/1005/123/A"};
         ArrayAdapter<String> arrayadap=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mylist);
-        mylistview= (ListView)findViewById(R.id.policecaselist);
+        mylistview= (ListView)findViewById(R.id.listcases);
         mylistview.setAdapter(arrayadap);
     }
 }

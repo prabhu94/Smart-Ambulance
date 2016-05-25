@@ -1,4 +1,4 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userambulance;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
+
+import com.example.prabhat.tester_app.GetRouteToPatientMap;
+import com.example.prabhat.tester_app.R;
 
 public class CaseEvaluationActivity extends AppCompatActivity {
     Button sendreport;

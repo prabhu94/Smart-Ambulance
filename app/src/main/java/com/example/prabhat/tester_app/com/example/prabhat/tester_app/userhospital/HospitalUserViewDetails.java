@@ -1,9 +1,11 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userhospital;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.prabhat.tester_app.R;
 
 public class HospitalUserViewDetails extends AppCompatActivity {
     ListView mylistview;

@@ -1,4 +1,4 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userhospital;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -8,6 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.prabhat.tester_app.ListedCasesActivity;
+import com.example.prabhat.tester_app.LoginPage;
+import com.example.prabhat.tester_app.R;
 
 public class HospitalUserActivity extends AppCompatActivity {
     Button viewdetails;

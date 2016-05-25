@@ -1,4 +1,4 @@
-package com.example.prabhat.tester_app;
+package com.example.prabhat.tester_app.com.example.prabhat.tester_app.userpolice;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.prabhat.tester_app.R;
 
 public class PoliceActivity extends AppCompatActivity {
     Button clearroad;
